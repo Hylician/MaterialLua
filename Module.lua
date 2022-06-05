@@ -2387,13 +2387,16 @@ function Material.Load(Config)
 			end
 
 			local SliderLibrary = {}
-
 			function SliderLibrary:SetText(Value)
 				SliderTitle.Text = Value
 			end
 
 			function SliderLibrary:GetText()
 				return SliderTitle.Text
+			end
+
+			function SliderLibrary:GetValue()
+				return SliderValue.Text
 			end
 
 			function SliderLibrary:SetMin(Value)
